@@ -11,7 +11,7 @@ export default function DisclaimerPage() {
       <div className="bg-[#1a2744] text-white py-12">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-extrabold mb-2">Disclaimer</h1>
-          <p className="text-gray-400 text-sm">Last updated: May 1, 2025</p>
+          <p className="text-gray-400 text-sm">Last updated: May 1, 2026</p>
         </div>
       </div>
 

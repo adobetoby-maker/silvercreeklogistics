@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPage() {
-  const effective = "May 1, 2025";
+  const effective = "May 1, 2026";
 
   return (
     <div className="bg-white">

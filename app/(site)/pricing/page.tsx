@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Info, Phone, Calculator } from "lucide-react";
-import { materials, truckingRates } from "@/lib/materials";
+import { materials, deliveryZones, truckingRates } from "@/lib/materials";
 import { shopInfo } from "@/lib/shopInfo";
 
 export const metadata: Metadata = {
@@ -80,19 +80,16 @@ export default function PricingPage() {
           <h2 className="text-2xl font-extrabold text-[#1a2744] mb-6">Delivery Pricing</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#f5f0eb] rounded-xl p-6">
-              <h3 className="font-bold text-[#1a2744] mb-4">Standard Delivery Rate</h3>
+              <h3 className="font-bold text-[#1a2744] mb-4">Delivery Zones</h3>
               <div className="space-y-3 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Base charge (local, under 10 mi)</span>
-                  <span className="font-semibold text-[#1a2744]">$85.00</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-gray-600">Per mile beyond 10 miles</span>
-                  <span className="font-semibold text-[#1a2744]">$4.25/mi</span>
-                </div>
-                <div className="flex justify-between pt-2 border-t border-gray-200">
-                  <span className="text-gray-600">Minimum delivery charge</span>
-                  <span className="font-semibold text-[#1a2744]">$85.00</span>
+                {deliveryZones.map((zone) => (
+                  <div key={zone.label} className="flex justify-between">
+                    <span className="text-gray-600">{zone.label}</span>
+                    <span className="font-semibold text-[#1a2744]">${zone.fee}</span>
+                  </div>
+                ))}
+                <div className="pt-2 border-t border-gray-200 text-xs text-gray-400">
+                  Delivery fee is in addition to the material price. Call for exact distance to your site.
                 </div>
               </div>
             </div>
@@ -106,7 +103,7 @@ export default function PricingPage() {
                   </div>
                 ))}
                 <div className="pt-2 border-t border-gray-200 text-xs text-gray-400">
-                  Larger projects may require multiple loads. We'll advise on the most cost-effective approach.
+                  {truckingRates.description}
                 </div>
               </div>
             </div>
