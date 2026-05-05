@@ -1,0 +1,10 @@
+name = "silvercreek-dispatch"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+[triggers]
+crons = ["*/30 * * * *"]
+
+# Set CRON_SECRET in the Cloudflare dashboard:
+# Workers & Pages → silvercreek-dispatch → Settings → Variables
+# Add: CRON_SECRET = <same value as your Vercel CRON_SECRET>
