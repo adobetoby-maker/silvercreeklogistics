@@ -36,15 +36,13 @@ export const shopInfo = {
       name: "Mack Super Dump",
       capacity: "20–25 tons",
       description: "Our workhorse for everyday aggregate deliveries.",
-      image:
-        "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+      image: "/images/truck-super-dump.jpg",
     },
     {
       name: "Side Dump",
       capacity: "25–30 tons",
       description: "Ideal for larger loads and tight job sites.",
-      image:
-        "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+      image: "/images/truck-side-dump.jpg",
     },
   ],
   social: {

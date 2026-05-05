@@ -37,8 +37,8 @@ export default function HomePage() {
       <section className="relative bg-[#1a2744] text-white overflow-hidden min-h-[580px] flex items-center">
         <div className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80"
-            alt="Heavy dump truck on Idaho highway"
+            src="/images/hero.jpg"
+            alt="Silver Creek Logistics truck delivering topsoil at a Magic Valley job site"
             fill
             className="object-cover opacity-25"
             priority
