@@ -181,7 +181,7 @@ export const specialServices: SpecialService[] = [
     description:
       "Need to move a track hoe, excavator, dozer, or other heavy equipment across Magic Valley? We haul it. Call for availability and to confirm your equipment fits our configuration.",
     uses: ["Track hoes & excavators", "Dozers & graders", "Skid steers", "Farm equipment"],
-    rate: 135,
+    rate: 165,
     rateUnit: "hr",
     image: "/images/equipment-hauling.jpg",
   },

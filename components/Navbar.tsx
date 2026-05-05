@@ -7,6 +7,7 @@ import { shopInfo } from "@/lib/shopInfo";
 
 const navLinks = [
   { label: "Services", href: "/services" },
+  { label: "Equipment Hauling", href: "/equipment-hauling" },
   { label: "Pricing", href: "/pricing" },
   { label: "Calculator", href: "/calculator" },
   { label: "About", href: "/about" },

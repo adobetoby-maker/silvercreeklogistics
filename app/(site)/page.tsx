@@ -26,7 +26,7 @@ const services = [
   { icon: Truck, label: "Road Base & Pit Run", desc: "Compactable base for driveways, roads, and pads" },
   { icon: Package, label: "Sand & Gravel", desc: "Utility sand, pea gravel, and crushed gravel" },
   { icon: Shield, label: "Rip Rap & Rock", desc: "Erosion control and channel lining rock" },
-  { icon: Truck, label: "Equipment Hauling", desc: "Track hoes, dozers, and heavy equipment — $135/hr" },
+  { icon: Truck, label: "Equipment Hauling", desc: "Track hoes, dozers, and heavy equipment — $165/hr" },
 ];
 
 const popularMaterials = materials.filter((m) => m.popular);
