@@ -162,6 +162,31 @@ export const densityFactors: Record<string, number> = {
   ripRap: 1.7,
 };
 
+export type SpecialService = {
+  id: string;
+  name: string;
+  category: string;
+  description: string;
+  uses: string[];
+  rate: number;
+  rateUnit: string;
+  image: string;
+};
+
+export const specialServices: SpecialService[] = [
+  {
+    id: "equipment-hauling",
+    name: "Equipment Hauling",
+    category: "Hauling Services",
+    description:
+      "Need to move a track hoe, excavator, dozer, or other heavy equipment across Magic Valley? We haul it. Call for availability and to confirm your equipment fits our configuration.",
+    uses: ["Track hoes & excavators", "Dozers & graders", "Skid steers", "Farm equipment"],
+    rate: 135,
+    rateUnit: "hr",
+    image: "/images/equipment-hauling.jpg",
+  },
+];
+
 export const deliveryZones = [
   { label: "Zone 1 — Twin Falls area (0–15 mi)", fee: 125 },
   { label: "Zone 2 — Magic Valley (15–30 mi)", fee: 225 },

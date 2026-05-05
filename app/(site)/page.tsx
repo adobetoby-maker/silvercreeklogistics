@@ -26,6 +26,7 @@ const services = [
   { icon: Truck, label: "Road Base & Pit Run", desc: "Compactable base for driveways, roads, and pads" },
   { icon: Package, label: "Sand & Gravel", desc: "Utility sand, pea gravel, and crushed gravel" },
   { icon: Shield, label: "Rip Rap & Rock", desc: "Erosion control and channel lining rock" },
+  { icon: Truck, label: "Equipment Hauling", desc: "Track hoes, dozers, and heavy equipment — $135/hr" },
 ];
 
 const popularMaterials = materials.filter((m) => m.popular);
@@ -107,7 +108,7 @@ export default function HomePage() {
               construction sites, farms, and landscaping projects.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {services.map(({ icon: Icon, label, desc }) => (
               <div key={label} className="bg-[#f5f0eb] rounded-xl p-6 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 bg-[#e8600a]/10 rounded-lg flex items-center justify-center mb-4">

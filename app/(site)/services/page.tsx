@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, Phone, Calculator, ArrowRight } from "lucide-react";
-import { materials, categories } from "@/lib/materials";
+import Image from "next/image";
+import { materials, categories, specialServices } from "@/lib/materials";
 import { shopInfo } from "@/lib/shopInfo";
 
 export const metadata: Metadata = {
@@ -72,6 +73,37 @@ export default function ServicesPage() {
             </section>
           );
         })}
+      </div>
+
+      {/* Equipment Hauling */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+        {specialServices.map((svc) => (
+          <section key={svc.id} id={svc.id}>
+            <h2 className="text-2xl font-extrabold text-[#1a2744] mb-6 pb-3 border-b border-gray-200">
+              {svc.category}
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+              <div className="relative h-64 rounded-xl overflow-hidden shadow-md">
+                <Image src={svc.image} alt={svc.name} fill className="object-cover" />
+              </div>
+              <div>
+                <div className="text-3xl font-extrabold text-[#e8600a] mb-1">
+                  ${svc.rate}<span className="text-lg font-normal text-gray-500">/{svc.rateUnit}</span>
+                </div>
+                <h3 className="text-xl font-bold text-[#1a2744] mb-3">{svc.name}</h3>
+                <p className="text-gray-500 mb-5">{svc.description}</p>
+                <ul className="space-y-2">
+                  {svc.uses.map((use) => (
+                    <li key={use} className="flex items-center gap-2 text-sm text-gray-600">
+                      <CheckCircle size={14} className="text-[#e8600a] shrink-0" />
+                      {use}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </section>
+        ))}
       </div>
 
       {/* Bottom CTAs */}

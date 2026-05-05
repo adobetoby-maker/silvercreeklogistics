@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Info, Phone, Calculator } from "lucide-react";
-import { materials, deliveryZones, truckingRates } from "@/lib/materials";
+import { materials, deliveryZones, truckingRates, specialServices } from "@/lib/materials";
 import { shopInfo } from "@/lib/shopInfo";
 
 export const metadata: Metadata = {
@@ -108,6 +108,40 @@ export default function PricingPage() {
               </div>
             </div>
           </div>
+        </section>
+
+        {/* Equipment Hauling */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-extrabold text-[#1a2744] mb-6">Equipment Hauling</h2>
+          <div className="rounded-xl border border-gray-200 overflow-hidden">
+            <table className="w-full text-sm">
+              <thead>
+                <tr className="bg-[#1a2744] text-white">
+                  <th className="px-4 py-3 text-left font-semibold">Service</th>
+                  <th className="px-4 py-3 text-left font-semibold hidden sm:table-cell">What We Move</th>
+                  <th className="px-4 py-3 text-right font-semibold">Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                {specialServices.map((svc) => (
+                  <tr key={svc.id} className="border-t border-gray-100 bg-white hover:bg-[#f5f0eb] transition-colors">
+                    <td className="px-4 py-4">
+                      <div className="font-semibold text-[#1a2744]">{svc.name}</div>
+                      <div className="text-xs text-gray-400 mt-0.5">{svc.description.slice(0, 60)}…</div>
+                    </td>
+                    <td className="px-4 py-4 text-gray-500 hidden sm:table-cell">
+                      {svc.uses.join(", ")}
+                    </td>
+                    <td className="px-4 py-4 text-right">
+                      <span className="font-bold text-[#e8600a] text-base">${svc.rate}</span>
+                      <span className="text-gray-400">/{svc.rateUnit}</span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-gray-400 mt-3">Call to confirm equipment fit and availability before booking.</p>
         </section>
 
         {/* Example estimates */}
