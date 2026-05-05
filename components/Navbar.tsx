@@ -7,7 +7,7 @@ import { shopInfo } from "@/lib/shopInfo";
 
 const navLinks = [
   { label: "Services", href: "/services" },
-  { label: "Materials & Pricing", href: "/pricing" },
+  { label: "Pricing", href: "/pricing" },
   { label: "Calculator", href: "/calculator" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
@@ -52,10 +52,10 @@ export default function Navbar() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="/order"
               className="ml-3 px-4 py-2 bg-[#e8600a] hover:bg-[#c4500a] text-white text-sm font-semibold rounded transition-colors"
             >
-              Get a Quote
+              Order a Load
             </Link>
           </div>
 
@@ -84,11 +84,11 @@ export default function Navbar() {
             ))}
             <div className="pt-2 px-4">
               <Link
-                href="/contact"
+                href="/order"
                 onClick={() => setOpen(false)}
                 className="block text-center px-4 py-2 bg-[#e8600a] hover:bg-[#c4500a] text-white text-sm font-semibold rounded transition-colors"
               >
-                Get a Quote
+                Order a Load
               </Link>
             </div>
           </div>

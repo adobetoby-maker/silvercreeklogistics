@@ -4,11 +4,12 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard, Users, FileText, MessageSquare,
-  Megaphone, Settings, LogOut, Truck,
+  Megaphone, Settings, LogOut, Truck, Radio,
 } from "lucide-react";
 
 const nav = [
   { href: "/admin", label: "Dashboard", icon: LayoutDashboard },
+  { href: "/admin/dispatch", label: "Dispatch", icon: Radio },
   { href: "/admin/clients", label: "Clients", icon: Users },
   { href: "/admin/invoices", label: "Invoices", icon: FileText },
   { href: "/admin/crm", label: "CRM", icon: MessageSquare },

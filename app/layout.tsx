@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import PwaInstall from "@/components/PwaInstall";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,7 +32,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${inter.className} h-full antialiased`}>
+      <head>
+        <meta name="theme-color" content="#1a2744" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="SCL Dispatch" />
+        <link rel="apple-touch-icon" href="/icon-192.png" />
+      </head>
       <body className="min-h-full flex flex-col bg-white text-gray-900">
+        <PwaInstall />
         {children}
       </body>
     </html>

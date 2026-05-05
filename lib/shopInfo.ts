@@ -4,7 +4,7 @@ export const shopInfo = {
   tagline: "Reliable Aggregate Delivery Across Magic Valley",
   description:
     "Twin Falls–based aggregate hauling with a Mack super dump and side dump. Topsoil, gravel, road base, sand — delivered on time, priced right.",
-  phone: "(208) 555-0192",
+  phone: "(208) 732-2540",
   email: "silvercreeklogistic@gmail.com",
   address: "Twin Falls, ID 83301",
   city: "Twin Falls",
