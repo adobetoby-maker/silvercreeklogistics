@@ -6,7 +6,7 @@ import { shopInfo } from "@/lib/shopInfo";
 import { specialServices } from "@/lib/materials";
 
 export const metadata: Metadata = {
-  title: "Equipment Hauling — Twin Falls & Magic Valley | Silver Creek Logistics",
+  title: "Equipment Hauling — Twin Falls & Magic Valley, Idaho",
   description:
     "Equipment hauling in Twin Falls, Idaho. We move track hoes, excavators, dozers, skid steers, and farm equipment across Magic Valley. $165/hr. Call Silver Creek Logistics.",
 };

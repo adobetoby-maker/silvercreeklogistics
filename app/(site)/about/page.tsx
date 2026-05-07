@@ -5,7 +5,7 @@ import { Truck, CheckCircle, MapPin, Phone } from "lucide-react";
 import { shopInfo } from "@/lib/shopInfo";
 
 export const metadata: Metadata = {
-  title: "About Silver Creek Logistics LLC",
+  title: "About Us",
   description:
     "A Twin Falls, Idaho trucking company built on showing up and doing the job right. We own our trucks — no broker, no middleman. Serving Magic Valley aggregate hauling needs.",
 };

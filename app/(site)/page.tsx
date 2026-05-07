@@ -16,7 +16,7 @@ import { shopInfo } from "@/lib/shopInfo";
 import { materials } from "@/lib/materials";
 
 export const metadata: Metadata = {
-  title: "Silver Creek Logistics LLC | Aggregate Delivery — Twin Falls, Idaho",
+  title: "Aggregate Delivery — Twin Falls, Idaho",
   description:
     "Aggregate hauling across Magic Valley, Idaho. Topsoil, gravel, road base, sand, fill dirt — delivered by our Mack super dump and side dump. Call today for a free quote.",
 };
