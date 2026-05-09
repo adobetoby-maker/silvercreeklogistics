@@ -1,6 +1,18 @@
 [
   {
+    "id": "wb-master-001",
+    "email": "adobetoby@gmail.com",
+    "name": "Toby (Worker-Bee)",
+    "role": "super_admin",
+    "passwordHash": "6fda074d6f5f9ff2fdfb0890c39fed03:fb9e87bcf63282b1d31f6313fe053955976fabac00ff389309818f16254fca4a506c4ce2133c39c8e5aa897179729233d2d83175dd4dce5adfe4ecab8bfaf741",
+    "createdAt": "2026-05-09T00:00:00.000Z"
+  },
+  {
+    "id": "sc-owner-001",
     "email": "silvercreeklogistic@gmail.com",
-    "role": "super_admin"
+    "name": "Silver Creek Admin",
+    "role": "super_admin",
+    "passwordHash": "",
+    "createdAt": "2026-05-09T00:00:00.000Z"
   }
 ]
