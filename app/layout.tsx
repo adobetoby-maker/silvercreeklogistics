@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import PwaInstall from "@/components/PwaInstall";
 
-const GA_ID = process.env.NEXT_PUBLIC_GA_ID
+const GA_ID = 'G-RP0TZ1MP7E'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     "trucking company Magic Valley",
     "Silver Creek Logistics",
   ],
-  alternates: {
-    canonical: BASE_URL,
-  },
   openGraph: {
     siteName: "Silver Creek Logistics LLC",
     locale: "en_US",
