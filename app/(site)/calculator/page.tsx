@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Material Calculator — How Much Do You Need?",
   description:
     "Free aggregate calculator for Magic Valley, Idaho projects. Calculate cubic yards and tons of topsoil, gravel, road base, sand, and fill dirt for driveways, patios, lawns, and more.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/calculator",
+  },
 };
 
 export default function CalculatorPage() {
@@ -38,7 +41,7 @@ export default function CalculatorPage() {
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
               <a
-                href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+                href={`tel:${shopInfo.phoneTel}`}
                 className="inline-flex items-center gap-2 px-5 py-3 bg-[#e8600a] hover:bg-[#c4500a] text-white font-bold rounded-lg transition-colors"
               >
                 <Phone size={16} />

@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Aggregate Delivery — Twin Falls, Idaho",
   description:
     "Aggregate hauling across Magic Valley, Idaho. Topsoil, gravel, road base, sand, fill dirt — delivered by our Mack super dump and side dump. Call today for a free quote.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app",
+  },
 };
 
 const services = [
@@ -61,7 +64,7 @@ export default function HomePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+                href={`tel:${shopInfo.phoneTel}`}
                 className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#e8600a] hover:bg-[#c4500a] text-white font-bold rounded-lg text-base transition-colors"
               >
                 <Phone size={18} />
@@ -283,6 +286,66 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ── Driver Resources (Amazon affiliate) ── */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-extrabold text-[#1a2744] mb-3">Driver Resources</h2>
+            <p className="text-gray-500 max-w-xl mx-auto">
+              Tools and gear our drivers swear by — vetted picks for commercial trucking professionals.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {[
+              {
+                icon: Truck,
+                title: "Garmin dezl Truck GPS",
+                desc: "Truck-specific routing with height, weight, and hazmat restrictions. No more wrong turns on low bridges.",
+                href: "https://www.amazon.com/s?k=Garmin+dezl+truck+GPS&tag=silvercreeklog-20",
+              },
+              {
+                icon: Shield,
+                title: "Commercial Dash Cam",
+                desc: "Front and rear recording for liability protection. Essential for any commercial operator on Idaho roads.",
+                href: "https://www.amazon.com/s?k=commercial+truck+dash+cam&tag=silvercreeklog-20",
+              },
+              {
+                icon: Package,
+                title: "Trucker Lumbar Support",
+                desc: "Long haul comfort starts with the right seat cushion. Reduce fatigue on multi-stop delivery days.",
+                href: "https://www.amazon.com/s?k=truck+seat+lumbar+support+cushion&tag=silvercreeklog-20",
+              },
+              {
+                icon: Clock,
+                title: "Safety Reflective Triangles",
+                desc: "DOT-required emergency triangles for roadside breakdowns. Keep a set in every truck.",
+                href: "https://www.amazon.com/s?k=emergency+safety+triangles+truck&tag=silvercreeklog-20",
+              },
+            ].map(({ icon: Icon, title, desc, href }) => (
+              <a
+                key={title}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="group bg-[#f5f0eb] rounded-xl p-6 hover:shadow-md transition-shadow flex flex-col"
+              >
+                <div className="w-12 h-12 bg-[#e8600a]/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-[#e8600a]/20 transition-colors">
+                  <Icon size={24} className="text-[#e8600a]" />
+                </div>
+                <h3 className="font-bold text-[#1a2744] mb-2">{title}</h3>
+                <p className="text-sm text-gray-500 leading-relaxed flex-1">{desc}</p>
+                <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#e8600a] group-hover:underline">
+                  View on Amazon <ArrowRight size={14} />
+                </span>
+              </a>
+            ))}
+          </div>
+          <p className="text-center text-xs text-gray-400 mt-8">
+            As an Amazon Associate we earn from qualifying purchases.
+          </p>
+        </div>
+      </section>
+
       {/* ── Final CTA ── */}
       <section className="py-16 bg-[#e8600a] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -292,7 +355,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+              href={`tel:${shopInfo.phoneTel}`}
               className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#e8600a] font-bold rounded-lg text-lg hover:bg-gray-100 transition-colors"
             >
               <Phone size={20} />

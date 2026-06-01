@@ -7,6 +7,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Request a Load — Order Aggregate Delivery",
   description: "Request a delivery of topsoil, gravel, road base, sand, or fill dirt to your site. Silver Creek Logistics serves all of Magic Valley, Idaho.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/order",
+  },
 };
 
 export default function OrderPage() {
@@ -28,7 +31,7 @@ export default function OrderPage() {
           </div>
 
           <div className="space-y-5">
-            <a href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+            <a href={`tel:${shopInfo.phoneTel}`}
               className="flex items-start gap-3 p-5 bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow border border-gray-100 group">
               <div className="w-10 h-10 bg-[#e8600a] rounded-lg flex items-center justify-center shrink-0">
                 <Phone size={18} className="text-white" />

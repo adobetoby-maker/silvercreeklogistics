@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <!-- Outer circle -->
+  <circle cx="60" cy="60" r="56" fill="#1a2744" stroke="#e8600a" stroke-width="3"/>
+  <!-- Mountain peaks -->
+  <path d="M20 82 L40 48 L55 67 L68 38 L100 82 Z" fill="#ffffff" opacity="0.9"/>
+  <!-- Snow cap on right peak -->
+  <path d="M68 38 L76 52 L82 44 L90 58 L100 82 L68 82 Z" fill="#e8e8e8"/>
+  <!-- Horizon line / ground -->
+  <rect x="20" y="82" width="80" height="3" fill="#e8600a" rx="1.5"/>
+  <!-- Company abbreviation -->
+  <text x="60" y="100" text-anchor="middle" fill="#ffffff" font-family="Georgia, serif" font-size="10" font-weight="bold" letter-spacing="2">SCL</text>
+</svg>

@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "Aggregate Pricing — Delivered Rates Magic Valley Idaho",
   description:
     "Current aggregate delivery pricing for Twin Falls and Magic Valley, Idaho. Topsoil, gravel, road base, fill dirt, sand — pit prices and delivered rates listed.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/pricing",
+  },
 };
 
 export default function PricingPage() {
@@ -178,7 +181,7 @@ export default function PricingPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
-              href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+              href={`tel:${shopInfo.phoneTel}`}
               className="inline-flex items-center gap-2 px-5 py-3 bg-[#e8600a] hover:bg-[#c4500a] text-white font-bold rounded-lg transition-colors"
             >
               <Phone size={16} />

@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Silver Creek Logistics LLC.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/privacy",
+  },
 };
 
 export default function PrivacyPage() {

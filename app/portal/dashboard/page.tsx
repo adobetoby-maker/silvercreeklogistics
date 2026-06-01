@@ -77,7 +77,7 @@ export default async function PortalDashboardPage() {
         <div className="font-bold mb-1">Questions about your account?</div>
         <p className="text-gray-300 text-xs mb-3">Contact Silver Creek Logistics directly.</p>
         <div className="flex gap-4">
-          <a href={`tel:${shopInfo.phone.replace(/\D/g, "")}`} className="text-[#f4a46a] hover:underline">{shopInfo.phone}</a>
+          <a href={`tel:${shopInfo.phoneTel}`} className="text-[#f4a46a] hover:underline">{shopInfo.phone}</a>
           <a href={`mailto:${shopInfo.email}`} className="text-[#f4a46a] hover:underline">{shopInfo.email}</a>
         </div>
       </div>

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Equipment Hauling — Twin Falls & Magic Valley, Idaho",
   description:
     "Equipment hauling in Twin Falls, Idaho. We move track hoes, excavators, dozers, skid steers, and farm equipment across Magic Valley. $165/hr. Call Silver Creek Logistics.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/equipment-hauling",
+  },
 };
 
 const svc = specialServices[0];
@@ -37,7 +40,7 @@ export default function EquipmentHaulingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <a
-              href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+              href={`tel:${shopInfo.phoneTel}`}
               className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#e8600a] hover:bg-[#c4500a] text-white font-bold rounded-lg transition-colors"
             >
               <Phone size={18} />
@@ -102,7 +105,7 @@ export default function EquipmentHaulingPage() {
               </p>
             </div>
             <a
-              href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+              href={`tel:${shopInfo.phoneTel}`}
               className="inline-flex items-center gap-2 mt-6 px-5 py-3 bg-[#e8600a] hover:bg-[#c4500a] text-white font-bold rounded-lg transition-colors"
             >
               <Phone size={16} />
@@ -207,7 +210,7 @@ export default function EquipmentHaulingPage() {
             Call us and we'll confirm availability, get the details, and put you on the schedule.
           </p>
           <a
-            href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+            href={`tel:${shopInfo.phoneTel}`}
             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-[#e8600a] font-bold rounded-lg text-lg hover:bg-gray-100 transition-colors"
           >
             <Phone size={20} />

@@ -21,7 +21,7 @@ export default function Navbar() {
     <header className="bg-[#1a2744] text-white sticky top-0 z-50 shadow-lg">
       {/* Top bar */}
       <div className="bg-[#e8600a] py-1.5 px-4 text-center text-sm font-medium">
-        <a href={`tel:${shopInfo.phone.replace(/\D/g, "")}`} className="flex items-center justify-center gap-2 hover:underline">
+        <a href={`tel:${shopInfo.phoneTel}`} className="flex items-center justify-center gap-2 hover:underline">
           <Phone size={14} />
           Call to schedule a delivery: {shopInfo.phone}
         </a>

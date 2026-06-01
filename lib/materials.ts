@@ -128,6 +128,21 @@ export const materials: Material[] = [
     sideDumpLoad: 28,
   },
   {
+    id: "a-rock-34",
+    name: "3/4\" A Rock (Bedding Rock)",
+    category: "Bedding Rock",
+    description:
+      "Washed, angular crushed basalt in 3/4\" sizing — the standard ISPWC Type I bedding material for water, sewer, and utility pipe installation across Magic Valley. Free of fines and clay. Also used as clean drain rock and decorative landscape rock.",
+    uses: ["Pipe bedding (water/sewer/utility)", "French drains", "Perimeter drainage", "Decorative landscaping"],
+    pitPrice: 22,
+    deliveredPrice: 44,
+    unit: "ton",
+    tonsPerYard: 1.45,
+    minLoad: 8,
+    superDumpLoad: 23,
+    sideDumpLoad: 28,
+  },
+  {
     id: "rip-rap",
     name: "Rip Rap (Large Rock)",
     category: "Erosion Control",
@@ -160,6 +175,7 @@ export const densityFactors: Record<string, number> = {
   fillDirt: 1.25,
   peaGravel: 1.4,
   ripRap: 1.7,
+  aRock: 1.45,
 };
 
 export type SpecialService = {

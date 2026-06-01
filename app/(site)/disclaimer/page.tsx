@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Disclaimer",
   description: "Disclaimer for Silver Creek Logistics LLC website and material calculator.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/disclaimer",
+  },
 };
 
 export default function DisclaimerPage() {

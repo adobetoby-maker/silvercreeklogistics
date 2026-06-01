@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service",
   description: "Terms of Service for Silver Creek Logistics LLC aggregate delivery services.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/terms",
+  },
 };
 
 export default function TermsPage() {

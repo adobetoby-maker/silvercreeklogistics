@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   title: "About Us",
   description:
     "A Twin Falls, Idaho trucking company built on showing up and doing the job right. We own our trucks — no broker, no middleman. Serving Magic Valley aggregate hauling needs.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/about",
+  },
 };
 
 export default function AboutPage() {
@@ -122,7 +125,7 @@ export default function AboutPage() {
           </div>
           <div className="flex gap-3 shrink-0">
             <a
-              href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+              href={`tel:${shopInfo.phoneTel}`}
               className="inline-flex items-center gap-2 px-5 py-3 bg-white text-[#e8600a] font-bold rounded-lg hover:bg-gray-100 transition-colors"
             >
               <Phone size={16} />

@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: "Contact — Get a Quote",
   description:
     "Contact Silver Creek Logistics LLC to schedule an aggregate delivery in Magic Valley, Idaho. Call or message us for a free quote on topsoil, gravel, road base, sand, and fill dirt.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/contact",
+  },
 };
 
 export default function ContactPage() {
@@ -32,7 +35,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-bold text-[#1a2744] mb-4">Get in Touch</h2>
               <div className="space-y-4">
                 <a
-                  href={`tel:${shopInfo.phone.replace(/\D/g, "")}`}
+                  href={`tel:${shopInfo.phoneTel}`}
                   className="flex items-start gap-3 p-4 bg-[#f5f0eb] rounded-xl hover:bg-[#eee5dc] transition-colors group"
                 >
                   <div className="w-10 h-10 bg-[#e8600a] rounded-lg flex items-center justify-center shrink-0">

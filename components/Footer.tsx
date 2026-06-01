@@ -56,7 +56,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-gray-400">
               <li className="flex items-start gap-2">
                 <Phone size={15} className="text-[#e8600a] mt-0.5 shrink-0" />
-                <a href={`tel:${shopInfo.phone.replace(/\D/g, "")}`} className="hover:text-white transition-colors">
+                <a href={`tel:${shopInfo.phoneTel}`} className="hover:text-white transition-colors">
                   {shopInfo.phone}
                 </a>
               </li>
@@ -97,6 +97,16 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+          <div className="text-center py-2 text-xs" style={{ opacity: 0.3 }}>
+        <a
+          href="https://worker-bee.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:opacity-60 transition-opacity"
+        >
+          Anderton &amp; Associates Web Services
+        </a>
+      </div>
+</footer>
   );
 }

@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "Aggregate Materials & Hauling Services",
   description:
     "Full list of aggregate materials available for delivery in Magic Valley, Idaho — topsoil, fill dirt, road base, gravel, sand, rip rap, and more. Silver Creek Logistics LLC.",
+  alternates: {
+    canonical: "https://silvercreeklogistics.worker-bee.app/services",
+  },
 };
 
 export default function ServicesPage() {
@@ -122,7 +125,7 @@ export default function ServicesPage() {
               <Phone size={28} className="text-[#e8600a] mx-auto mb-3" />
               <h3 className="font-bold text-[#1a2744] mb-2">Call to order</h3>
               <p className="text-sm text-gray-500 mb-4">Talk to us directly. We'll confirm availability and schedule your delivery.</p>
-              <a href={`tel:${shopInfo.phone.replace(/\D/g, "")}`} className="inline-flex items-center gap-1 text-[#e8600a] font-semibold text-sm hover:underline">
+              <a href={`tel:${shopInfo.phoneTel}`} className="inline-flex items-center gap-1 text-[#e8600a] font-semibold text-sm hover:underline">
                 {shopInfo.phone} <ArrowRight size={14} />
               </a>
             </div>
